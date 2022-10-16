@@ -1,0 +1,69 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Nova</title>
+</head>
+
+<body>
+
+    <div class="pagina">
+        <div class="cabecalho">
+            <h1 class="titulo">Jogo da Nova - by SomeoneWhoKnows</h1>
+        </div>
+        <div class="alertas"></div>
+        <div class="corpo">
+            <div class="dados">
+                <div class="input">
+
+                    <input class="nome" type="text" id="jogador1" name="pessoaA" value="Jogador 1"
+                        onkeyup="salvarNome(this)" required spellcheck="false" autocomplete="off">
+                    <label for="jogador1">Jogador 1</label>
+                </div>
+                <div class="estatisticas" id="vitoriasA">
+                    Vitórias: 0
+                </div>
+            </div>
+
+            <div class="jogo">
+
+                <div class="checkArea" id="A" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="B" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="C" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="D" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="E" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="F" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="G" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="H" onclick="novaJogada(this)"></div>
+                <div class="checkArea" id="I" onclick="novaJogada(this)"></div>
+
+            </div>
+
+            <div class="dados">
+                <div class="input">
+                    <input class="nome" type="text" id="jogador2" name="pessoaB" value="Jogador 2" onkeyup="salvarNome(this)"
+                        required spellcheck="false" autocomplete="off">
+                    <label for="jogador2">Jogador 2</label>
+                </div>
+                <div class="estatisticas" id="vitoriasB">
+                    Vitórias: 0
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
